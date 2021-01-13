@@ -82,6 +82,8 @@
   &__toggle-menu {
     font-size: 0;
     color: $c-accent;
+    display: block;
+    cursor: pointer;
     @media #{$lg} {
       display: none;
     }
