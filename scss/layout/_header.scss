@@ -60,6 +60,18 @@
     }
   }
 
+  &__counter {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: #8c909d;
+    border-radius: 24px;
+    color: white;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 9px;
+  }
 }
 
 .user-nav {
