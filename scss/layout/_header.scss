@@ -1,9 +1,17 @@
 .master-header {
+  padding-top: 32px;
   font-weight: $bold;
   > .container {
     display: flex;
+    justify-content: space-between;
   }
 }
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   color: $c-accent;
   font-size: 0;
