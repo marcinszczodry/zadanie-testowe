@@ -1,17 +1,25 @@
 .sidebar {
-  @media #{$lg} {
-    display: none;
+  display: none;
+  &--opened {
+    @media #{$lg} {
+      display: none;
+    }
+    display: unset;
   }
-  padding: 32px 30px;
+  padding: 34px 30px;
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
   right: 0;
   background: $c-accent;
+  > .container {
+    height: 100%;
+  }
   &__toggle-menu {
     color: white;
     font-size: 0;
+    cursor: pointer;
   }
 }
 
