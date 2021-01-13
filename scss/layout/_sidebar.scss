@@ -44,3 +44,50 @@
     margin-right: 36px;
   }
 }
+
+.sidebar-nav {
+  display: flex;
+  height: calc(100% - 30px);
+  &__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+  }
+
+  &__item {
+    color: white;
+    font-weight: $extra-bold;
+    font-size: 2.625rem;
+    margin-bottom: 40px;
+    opacity: .6;
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border: 5px solid white;
+    border-radius: 43px;
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 27px;
+  }
+}
