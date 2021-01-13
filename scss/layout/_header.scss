@@ -28,6 +28,29 @@
       margin-left: 62px;
     }
   }
+
+  &__item {
+    @media #{$lg} {
+      margin-right: 30px;
+      text-transform: uppercase;
+      color: #8c909d;
+
+      &--active {
+        color: $c-accent;
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          width: 20px;
+          height: 2px;
+          background: $c-accent;
+        }
+      }
+    }
+  }
+
 }
 
 .user-nav {
