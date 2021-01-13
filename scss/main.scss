@@ -4,9 +4,16 @@
 
 /* Import
    ========================================================================== */
-    @import '00-settings/*';
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
-
-/* Variables
-   ========================================================================== */
-   $main: #4e74ff;
+   @import
+      'utils/font-weights',
+      'utils/colors-vars',
+      'utils/gird-vars';
+   @import
+      'base/reset',
+      'base/normalize',
+      'base/base',
+      'base/typography';
+   @import
+      'layout/grid';
+   @import
+      'pages/home';
