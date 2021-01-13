@@ -66,50 +66,52 @@
 		</div>
 	</header>
 	<aside class="sidebar">
-		<header class="sidebar-header">
-			<nav class="sidebar-user-nav">
-				<div class="sidebar-user-nav__profile">
-					<div class="sidebar-user-nav__picture-container">
-						<img class="sidebar-user-nav__picture" src="./img/avatar.jpg" alt="Tekst alternatywny">
+		<div class="container">
+			<header class="sidebar-header">
+				<nav class="sidebar-user-nav">
+					<div class="sidebar-user-nav__profile">
+						<div class="sidebar-user-nav__picture-container">
+							<img class="sidebar-user-nav__picture" src="./img/avatar.jpg" alt="Tekst alternatywny">
+						</div>
+						<span class="sidebar-user-nav__name">Monkee</span>
 					</div>
-					<span class="sidebar-user-nav__name">Monkee</span>
-				</div>
-				<ul class="sidebar-user-nav__dropdown">
-					<li class="sidebar-user-nav__item">
-						<a href="#" class="sidebar-user-nav__link"></a>
+					<ul class="sidebar-user-nav__dropdown">
+						<li class="sidebar-user-nav__item">
+							<a href="#" class="sidebar-user-nav__link"></a>
+						</li>
+					</ul>
+				</nav>
+				<i class="sidebar__toggle-menu">
+					<svg width="24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M24 14v2H0v-2h24zm0-7v2H0V7h24zm0-7v2H0V0h24z" fill="currentColor" fill-rule="evenodd"/></svg>
+					Show or hide menu
+				</i>
+			</header>
+			<nav class="sidebar-nav">
+				<ul class="sidebar-nav__list">
+					<li class="sidebar-nav__item sidebar-nav__item--active">
+						<a href="#" class="sidebar-nav__link">Home</a>
+					</li>
+					<li class="sidebar-nav__item">
+						<a href="#" class="sidebar-nav__link">People</a>
+					</li>
+					<li class="sidebar-nav__item">
+						<a href="#" class="sidebar-nav__link">Stats</a>
+					</li>
+					<li class="sidebar-nav__item">
+						<a href="#" class="sidebar-nav__link">
+							Messages
+							<span class="sidebar-nav__counter">23</span>
+						</a>
+					</li>
+					<li class="sidebar-nav__item">
+						<a href="#" class="sidebar-nav__link">
+							Tasks
+							<span class="sidebar-nav__counter">17</span>
+						</a>
 					</li>
 				</ul>
 			</nav>
-			<i class="sidebar__toggle-menu">
-				<svg width="24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M24 14v2H0v-2h24zm0-7v2H0V7h24zm0-7v2H0V0h24z" fill="currentColor" fill-rule="evenodd"/></svg>
-				Show or hide menu
-			</i>
-		</header>
-		<nav class="sidebar-nav">
-			<ul class="sidebar-nav__list">
-				<li class="sidebar-nav__item sidebar-nav__item--active">
-					<a href="#" class="sidebar-nav__link">Home</a>
-				</li>
-				<li class="sidebar-nav__item">
-					<a href="#" class="sidebar-nav__link">People</a>
-				</li>
-				<li class="sidebar-nav__item">
-					<a href="#" class="sidebar-nav__link">Stats</a>
-				</li>
-				<li class="sidebar-nav__item">
-					<a href="#" class="sidebar-nav__link">
-						Messages
-						<span class="sidebar-nav__counter">23</span>
-					</a>
-				</li>
-				<li class="sidebar-nav__item">
-					<a href="#" class="sidebar-nav__link">
-						Tasks
-						<span class="sidebar-nav__counter">17</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
+		</div>
 	</aside>
   <main class="page-home">
 	</main>
