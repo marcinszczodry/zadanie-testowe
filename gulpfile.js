@@ -12,7 +12,10 @@ const del = require('del');
 sass.compiler = require('node-sass');
 
 function scss() {
-    return src('scss/main.scss')
+    return src([
+        'node_modules/bootstrap/scss/bootstrap.scss',
+        'scss/main.scss'
+    ])
         .pipe(sassGlob())
         .pipe(sourcemaps.init())
         .pipe(sass())
@@ -20,6 +23,14 @@ function scss() {
         .pipe(minifyCSS())
         .pipe(sourcemaps.write('.'))
         .pipe(dest('css'))
+}
+
+function js() {
+    return src([
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'node_modules/jquery/dist/jquery.min.js'
+    ])
+        .pipe(dest('js'))
 }
 
 function reload(done){
@@ -39,5 +50,5 @@ exports.serve = function() {
         }
     });
 
-    watch('scss/**/*.scss', { ignoreInitial: false }, series(scss, reload));
+    watch('scss/**/*.scss', { ignoreInitial: false }, series(scss, js, reload));
 }
