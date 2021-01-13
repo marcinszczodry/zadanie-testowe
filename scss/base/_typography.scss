@@ -1,1 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: $c-primary;
+}
+
+h1 {
+  font-size: 4rem; // TODO: adjust font size based on device screen size
+  background-image: linear-gradient(166deg, $c-accent -3%, darken($c-accent, 10%) 118%);
+  font-weight: $extra-bold;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
