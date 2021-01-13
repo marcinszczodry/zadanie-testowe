@@ -2,4 +2,8 @@
   > .container {
     display: flex;
   }
+  &__logo {
+    color: $c-accent;
+    font-size: 0;
+  }
 }
