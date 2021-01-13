@@ -10,6 +10,11 @@
 .left-side {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  @media #{$lg} {
+    width: auto;
+  }
 }
 
 .logo {
@@ -19,10 +24,11 @@
 
 .master-nav {
   &__list {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     @media #{$lg} {
+      display: flex;
       flex-direction: row;
       font-size: 0.875rem;
       margin-left: 62px;
@@ -72,9 +78,21 @@
     text-align: center;
     margin-left: 9px;
   }
+
+  &__toggle-menu {
+    font-size: 0;
+    color: $c-accent;
+    @media #{$lg} {
+      display: none;
+    }
+  }
 }
 
 .user-nav {
+  display: none;
+  @media #{$lg} {
+    display: unset;
+  }
   &__profile {
     display: flex;
     align-items: center;
