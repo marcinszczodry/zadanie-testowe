@@ -1,0 +1,9 @@
+.greeting {
+  margin-top: 47px;
+  margin-bottom: 70px;
+  @media #{$lg} {
+    margin-top: 136px;
+    margin-bottom: 92px;
+  }
+}
+
