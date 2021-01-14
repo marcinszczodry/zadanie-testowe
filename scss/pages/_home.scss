@@ -72,3 +72,45 @@
   }
 }
 
+.task-progress {
+  margin-top: 82px;
+  &__item {
+    display: flex;
+    margin-bottom: 39px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__picture-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 9px;
+  }
+  &__picture {
+    object-fit: cover;
+  }
+  &__title {
+    font-size: 0.875rem;
+    display: block;
+    width: 155px;
+  }
+  &__bar {
+    position: relative;
+    display: inline-block;
+    height: 4px;
+    background: $c-accent;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 155px;
+      height: 4px;
+      background: #D7DBE8;
+      z-index: -1;
+    }
+  }
+}
