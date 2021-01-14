@@ -134,3 +134,62 @@
     background: $c-accent;
   }
 }
+
+.calendar {
+  position: relative;
+  z-index: 1;
+  margin-top: 147px;
+  height: 460px;
+  padding: 24px 0;
+  opacity: 0.92;
+  border-radius: 10px;
+  background-color: #42444d;
+  color: $c-accent;
+  font-weight: $bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &__today {
+    text-align: center;
+  }
+
+  &__today-day {
+    font-size: 8.75rem;
+  }
+
+  &__today-month {
+    color: white;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  &__table {
+    align-self: center;
+    color: $c-accent;
+    font-size: 0.875rem;
+  }
+  
+  &__week {
+    height: 36px;
+  }
+
+  &__day {
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    border: none !important;
+    text-align: center;
+    &last-child {
+      margin-right: 0;
+    }
+    &--active {
+      color: white;
+      background: $c-accent;
+      border-radius: 50%;
+    }
+  }
+
+}
