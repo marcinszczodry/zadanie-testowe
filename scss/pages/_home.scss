@@ -1,3 +1,13 @@
+.background-triangle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #4E74FF;
+  clip-path: polygon(100% 30%, 41.33% 100%, 100% 100%);
+}
+
 .greeting {
   margin-top: 47px;
   margin-bottom: 70px;
