@@ -9,18 +9,23 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<!-- Master header -->
 	<header class="master-header">
 		<div class="container">
 			<div class="left-side">
+				<!-- Logo -->
 				<a href='/' class="logo">
 					<svg width="34" height="34" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="47" r="15" transform="translate(-28 -30)" stroke="currentColor" stroke-width="4" fill="none" fill-rule="evenodd"/></svg>
 					Zadanie testowe - opis strony
 				</a>
+				<!-- Master nav -->
 				<nav class="master-nav">
+					<!-- Navigation toggler -->
 					<i class="master-nav__toggle-menu">
 						<svg width="24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M24 14v2H0v-2h24zm0-7v2H0V7h24zm0-7v2H0V0h24z" fill="currentColor" fill-rule="evenodd"/></svg>
 						Show or hide menu
 					</i>
+					<!-- Navigation links -->
 					<ul class="master-nav__list">
 						<li class="master-nav__item master-nav__item--active">
 							<a href="#" class="master-nav__link">Home</a>
@@ -45,7 +50,9 @@
 						</li>
 					</ul>
 				</nav>
+				<!-- // Master nav -->
 			</div>
+			<!-- User nav -->
 			<nav class="user-nav">
 				<div class="user-nav__profile">
 					<div class="user-nav__picture-container">
@@ -63,10 +70,14 @@
 					</li>
 				</ul>
 			</nav>
+			<!-- // User nav -->
 		</div>
 	</header>
+	<!-- // Master header -->
+	<!-- Sidebar -->
 	<aside class="sidebar">
 		<div class="container">
+			<!-- Master header (User profile & Nav toggler) -->
 			<header class="sidebar-header">
 				<nav class="sidebar-user-nav">
 					<div class="sidebar-user-nav__profile">
@@ -86,6 +97,8 @@
 					Show or hide menu
 				</i>
 			</header>
+			<!-- // Master header -->
+			<!-- Master nav -->
 			<nav class="sidebar-nav">
 				<ul class="sidebar-nav__list">
 					<li class="sidebar-nav__item sidebar-nav__item--active">
@@ -111,17 +124,20 @@
 					</li>
 				</ul>
 			</nav>
+			<!-- // Master nav -->
 		</div>
 	</aside>
+	<!-- // Sidebar -->
+	<!-- Page: Home -->
   <main class="page-home">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-
+					<!-- Greeting -->
 					<h1 class="greeting col">
 						Hello Dude, how are you today?
 					</h1>
-
+					<!-- Notifications -->
 					<ul class="notifications">
 						<li class="notifications__item">
 							<div class="notifications__icon">
@@ -138,7 +154,7 @@
 							Messages
 						</li>
 					</ul>
-
+					<!-- Tasks progress -->
 					<ul class="task-progress">
 						<li class="task-progress__item">
 							<div class="task-progress__picture-container">
@@ -159,7 +175,7 @@
 							</p>
 						</li>
 					</ul>
-
+					<!-- Slider controls -->
 					<ul class="controls">
 						<li class="controls__control controls__control--active"></li>
 						<li class="controls__control"></li>
@@ -168,6 +184,7 @@
 				</div>
 
 				<div class="col-md-4 offset-md-1">
+					<!-- Calendar -->
 					<section class="calendar">
 						<div class="calendar__today">
 							<p class="calendar__today-day">27</p>
@@ -223,12 +240,14 @@
 							</tbody>
 						</table>
 					</section>
+					<!-- // Calendar -->
 				</div>
 			</div>
 		</div>
 	</main>
+	<!-- Background triangle that displays under the calendar -->
 	<div class="background-triangle"></div>
-	<!-- / page-home -->
+	<!-- // Page: home -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
