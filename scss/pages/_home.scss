@@ -5,7 +5,10 @@
   width: 100vw;
   height: 100vh;
   background: #4E74FF;
-  clip-path: polygon(100% 30%, 41.33% 100%, 100% 100%);
+  clip-path: polygon(100% 50%, 41.33% 100%, 100% 100%);
+  @media #{$md} {
+    clip-path: polygon(100% 30%, 41.33% 100%, 100% 100%);
+  }
 }
 
 .greeting {
