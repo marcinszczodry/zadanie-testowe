@@ -53,6 +53,10 @@
           height: 2px;
           background: $c-accent;
         }
+        // prevent hover effect of __link element on current link
+        > a {
+          color: inherit !important;
+        }
       }
     }
   }
@@ -60,9 +64,10 @@
   &__link {
     display: inline-flex;
     align-items: center;
+    transition: color .2s ease;
     &:hover {
       text-decoration: none;
-      color: inherit;
+      color: darken(#8c909d, 20%);
     }
   }
 
