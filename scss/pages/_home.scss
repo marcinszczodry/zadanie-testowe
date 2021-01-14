@@ -149,37 +149,60 @@
 }
 
 .calendar {
-  position: relative;
   z-index: 1;
   margin-top: 147px;
-  height: 460px;
   padding: 24px 0;
   opacity: 0.92;
   border-radius: 10px;
-  background-color: #42444d;
-  color: $c-accent;
   font-weight: $bold;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  @media #{$lg} {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    background-color: #42444d;
+    color: $c-accent;
+  }
 
   &__today {
     text-align: center;
   }
 
   &__today-day {
-    font-size: 8.75rem;
+    color: white;
+    font-size: 4rem;
+    @media #{$md} {
+      font-size: 8.75rem;
+    }
+    @media #{$lg} {
+      color: unset;
+    }
   }
 
   &__today-month {
-    color: white;
-    font-size: 1.75rem;
     text-transform: uppercase;
     margin-top: 10px;
+    color:rgba(255,255,555,0.5);
+    font-size: 1.25rem;
+    @media #{$md} {
+      font-size: 1.75rem;
+    }
+    @media #{$lg} {
+      color:rgba(255,255,555,1);
+      margin-bottom: 20px;
+    }
   }
 
   &__table {
+    display: none;
+    @media #{$lg} {
+      display: unset;
+    }
     align-self: center;
     color: $c-accent;
     font-size: 0.875rem;
