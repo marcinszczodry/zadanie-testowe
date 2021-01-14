@@ -114,3 +114,23 @@
     }
   }
 }
+
+.controls {
+  margin-top: 67px;
+  display: flex;
+  &__control {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: #DEDEDE;
+    margin-right: 14px;
+    @media #{$md} {
+      margin-right: 4px;
+    }
+  }
+
+  &__control--active {
+    background: $c-accent;
+  }
+}
